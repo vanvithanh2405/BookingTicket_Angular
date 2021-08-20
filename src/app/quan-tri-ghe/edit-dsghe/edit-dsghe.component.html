@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-9 mx-auto">
+      <app-danh-sach-ghe></app-danh-sach-ghe>
+    </div>
+
+
+    <div class="col-3 ">
+      <h2 class="text-center">Thêm ghế</h2>
+      <form class="px-5">
+        <div class="form-group">
+          <p>Số Ghế</p>
+          <input class="form-control"  type="text" #soGhe/>
+        </div>
+        <div class="form-group">
+          <p>Tên ghế</p>
+          <input class="form-control"  type="text" #tenGhe/>
+        </div>
+        <div class="form-group">
+          <p>Giá</p>
+          <input class="form-control"  type="text" #gia/>
+        </div>
+        <div class="form-group">
+          <p>Trạng thái</p>
+          <input class="form-control"  type="text" #trangThai/>
+        </div>
+        <div class="form-group">
+          <button class="form-control btn btn-success" (click)="themGheParent(soGhe.value,tenGhe.value,gia.value,trangThai.value)">Thêm ghế</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
